@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Automatically created by ../biovista-lib/scripts/update-build-xml.sh. Do not edit -->
+<project basedir="." default="build" name="bv-resty-gwt">
+	<property name="src_dir" value="./resty-gwt/restygwt/src/main/java"/>
+	<property name="build_dir" value="build"/>
+	<property name="excluded" value=" ${excludes}"/>
+	<import file="../biovista-lib/build-lib.xml" />
+	<import file="../biovista-lib/build-common.xml" />
+
+	<path id="bv-resty-gwt.classpath">
+		<pathelement location="${build_dir}"/>
+		<path refid="cxf-server-libraries.userclasspath"/>
+		<path refid="gwt-sdk.userclasspath"/>
+	</path>
+
+	<path id="bv-resty-gwt.srcpath">
+		<pathelement location="./resty-gwt/restygwt/src/main/java"/>
+	</path>
+
+	<target name="cleanall" description="cleans all dependendant projects" depends="clean">
+	</target>
+
+	<target name="build-subprojects">
+	</target> 
+
+	<target name="build-project" depends="init">
+		<echo message="${ant.project.name}: ${ant.file}"/>
+		<javac debug="true" debuglevel="${debuglevel}" srcdir="${src_dir}" destdir="${build_dir}" excludes="${excluded}" classpathref="bv-resty-gwt.classpath" includeantruntime="false" source="${source}" target="${target}"/>
+	</target>
+</project>
