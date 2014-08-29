@@ -9,7 +9,7 @@
 
 	<path id="bv-resty-gwt.classpath">
 		<pathelement location="${build_dir}"/>
-		<path refid="cxf-server-libraries.userclasspath"/>
+		<path refid="cxf-client-rs-libraries.userclasspath"/>
 		<path refid="gwt-sdk.userclasspath"/>
 	</path>
 
