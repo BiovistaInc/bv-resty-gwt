@@ -11,6 +11,7 @@
 		<pathelement location="${build_dir}"/>
 		<path refid="cxf-client-rs-libraries.userclasspath"/>
 		<path refid="gwt-sdk.userclasspath"/>
+		<path refid="jena-libraries.userclasspath"/>
 	</path>
 
 	<path id="bv-resty-gwt.srcpath">
