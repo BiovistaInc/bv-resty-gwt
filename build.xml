@@ -15,6 +15,7 @@
 		<path refid="gwt-sdk.userclasspath"/>
 		<path refid="jackson-libraries.userclasspath"/>
 		<path refid="javapoet-libraries.userclasspath"/>
+		<path refid="jsr305-libraries.userclasspath"/>
 	</path>
 
 	<path id="bv-resty-gwt.srcpath">
