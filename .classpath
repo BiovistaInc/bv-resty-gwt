@@ -9,7 +9,6 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/cxf-client-rs-libraries"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jackson-libraries"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/java-ee-libraries"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/gwt"/>
 	<classpathentry kind="output" path="build"/>
 </classpath>

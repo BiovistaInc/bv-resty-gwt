@@ -12,8 +12,8 @@
 		<pathelement location="${build_dir}"/>
 		<pathelement location="../bv-gwt-jackson/build"/>
 		<path refid="cxf-client-rs-libraries.userclasspath"/>
+		<path refid="gwt.userclasspath"/>
 		<path refid="jackson-libraries.userclasspath"/>
-		<path refid="java-ee-libraries.userclasspath"/>
 		<path refid="javapoet-libraries.userclasspath"/>
 		<path refid="jsr305-libraries.userclasspath"/>
 	</path>
