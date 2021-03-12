@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="resty-gwt/restygwt/src/main/java"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/bv-gwt-jackson"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
 			<attribute name="module" value="true"/>

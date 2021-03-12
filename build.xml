@@ -10,29 +10,19 @@
 
 	<path id="bv-resty-gwt.classpath">
 		<pathelement location="${build_dir}"/>
-		<pathelement location="../bv-gwt-jackson/build"/>
 		<path refid="cxf-client-rs-libraries.userclasspath"/>
 		<path refid="gwt.userclasspath"/>
 		<path refid="jackson-libraries.userclasspath"/>
-		<path refid="javapoet-libraries.userclasspath"/>
-		<path refid="jsr305-libraries.userclasspath"/>
 	</path>
 
 	<path id="bv-resty-gwt.srcpath">
-		<pathelement location="../bv-gwt-jackson/gwt-jackson/gwt-jackson/src/main/resources"/>
 		<pathelement location="./resty-gwt/restygwt/src/main/java"/>
 	</path>
 
 	<target name="cleanall" description="cleans all dependendant projects" depends="clean">
-		<ant antfile="build.xml" dir="../bv-gwt-jackson" inheritAll="false" target="cleanall"/>
 	</target>
 
 	<target name="build-subprojects">
-	        <ant antfile="build.xml" dir="../bv-gwt-jackson" inheritAll="false" target="build">
-			<propertyset>
-				<propertyref name="build.compiler"/>
-			</propertyset>
-		</ant>
 	</target> 
 
 	<target name="build-project" depends="init">
